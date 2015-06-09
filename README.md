@@ -19,16 +19,17 @@ $ git reset --hard
 
 * See difference:
 
-
+```
 $ git diff -- myfile.txt
 
   or if you want to see already-added changes
 
 $ git diff --cached -- myfile.txt
-
+```
 
 * Updating GitHub forked repository:
 
+```
   Add the remote, call it "upstream":
 
 $ git remote add upstream https://github.com/whoever/whatever.git
@@ -49,3 +50,4 @@ $ git checkout master
 $ git rebase upstream/master
 
 $ git push -f origin master
+```
