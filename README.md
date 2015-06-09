@@ -2,7 +2,8 @@
 Common git commands
 
 * General
-{code}
+
+```
 $ git clone https://github.com/skelkar7/example.git
 
 $ git add .
@@ -14,7 +15,7 @@ $ git commit -m '<version-name>'
 $ git push
 
 $ git reset --hard
-{code}
+```
 
 * See difference:
 
