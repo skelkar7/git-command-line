@@ -1,49 +1,49 @@
 # git-command-line
 Common git commands
 
-1. General
-git clone https://github.com/skelkar7/example.git
+* General
+$ git clone https://github.com/skelkar7/example.git
 
-git add .
+$ git add .
 
-git status
+$ git status
 
-git commit -m '<version-name>'
+$ git commit -m '<version-name>'
 
-git push
+$ git push
 
-git reset --hard
-
-
-2. See difference:
+$ git reset --hard
 
 
-git diff -- myfile.txt
-
-or if you want to see already-added changes
-
-git diff --cached -- myfile.txt
+* See difference:
 
 
-3. Updating GitHub forked repository:
+$ git diff -- myfile.txt
 
-# Add the remote, call it "upstream":
+  or if you want to see already-added changes
 
-git remote add upstream https://github.com/whoever/whatever.git
+$ git diff --cached -- myfile.txt
 
-# Fetch all the branches of that remote into remote-tracking branches,
-# such as upstream/master:
 
-git fetch upstream
+* Updating GitHub forked repository:
 
-# Make sure that you're on your master branch:
+  Add the remote, call it "upstream":
 
-git checkout master
+$ git remote add upstream https://github.com/whoever/whatever.git
 
-# Rewrite your master branch so that any commits of yours that
-# aren't already in upstream/master are replayed on top of that
-# other branch:
+  Fetch all the branches of that remote into remote-tracking branches,
+  such as upstream/master:
 
-git rebase upstream/master
+$ git fetch upstream
 
-git push -f origin master
+  Make sure that you're on your master branch:
+
+$ git checkout master
+
+  Rewrite your master branch so that any commits of yours that
+  aren't already in upstream/master are replayed on top of that
+  other branch:
+
+$ git rebase upstream/master
+
+$ git push -f origin master
